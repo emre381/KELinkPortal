@@ -1,0 +1,101 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+    <title>Link Portal Test</title>
+
+
+    <!-- Bootstrap core CSS -->
+    
+    <link href="~/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    
+
+    <!-- Additional CSS Files -->
+    
+    <link href="~/css/fontawesome.css" rel="stylesheet" />
+   
+    <link href="~/css/templatemo-seo-dream.css" rel="stylesheet" />
+    
+    <link href="~/css/animated.css" rel="stylesheet" />
+    
+    <link href="~/css/owl.css" rel="stylesheet" />
+<!--
+
+TemplateMo 563 SEO Dream
+
+https://templatemo.com/tm-563-seo-dream
+
+-->
+
+
+</head>
+
+<body>
+
+
+  <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+
+  <!-- ***** Header Area Start ***** -->
+  @Html.Partial("Header")
+  <!-- ***** Header Area End ***** -->
+
+  
+  @RenderBody()
+    <!-- www.sitekodlari.com Kod Baslangici -->
+    <form action="/Anasayfa" method="get">
+        <input type="text" value="" maxlength="230" size="20" name="q" /><br /> <input type="submit" value="ARA" /><br /> <input type="radio" value="" name="sitesearch" />
+        Google Arama
+        <br />
+        <input type="radio" checked="" value="https://localhost:44321/AnaSayfa/Index" name="sitesearch" />
+        Sitemde Arama <br />
+    </form><!-- www.sitekodlari.com Kod Sonu -->
+  
+  @Html.Partial("Footer")
+
+  <!-- Scripts -->
+    
+    <!-- Scripts -->
+<script src="~/vendor/jquery/jquery.js"></script>
+    <script src="~/vendor/jquery/jquery.min.js"></script>
+    <script src="~/vendor/jquery/jquery.slim.js"></script>
+    <script src="~/vendor/jquery/jquery.slim.min.js"></script>
+   
+    
+    <script src="~/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+   
+    
+    <script src="~/js/owl-carousel.js"></script>
+   <script src="~/js/animation.js"></script>
+    
+    <script src="~/js/imagesloaded.js"></script>
+    
+    <script src="~/js/custom.js"></script>
+
+
+</body>
+</html>
